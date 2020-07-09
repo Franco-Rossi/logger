@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'not_found' => ':field does not found',
+    'access_denied' => 'Access denied',
+    'error_authentication' => 'Error in authentication',
+    'registered' => 'Successfully registered',
+    'updated' => 'Successfully updated',
+    'deleted' => 'Successfully deleted',
+    'internal_query' => 'Internal error',
+    'access_true_by_user_temporal_permission' => 'Access valid by temporal permission',
+    'access_false_resource_dont_granted' => 'Resource does not granted',
+    'access_true_by_temporal_permission' => 'By user temporal permission',
+    'access_true_by_user' => 'Access valid by user',
+    'access_false_by_user' => 'Access invalid by granted or permission state disabled by user',
+    'access_false_by_org_disabled' => 'Access invalid by org disabled',
+    'access_false_by_org' => 'Access invalid by granted or permission state disabled by org',
+    'access_true_by_org' => 'Access valid by org',
+    'access_true_by_temporal_permission_by_org' => 'By org temporal permission',
+    'access_false_resource_dont_granted_by_role' => 'Resource does not granted by role',
+    'access_true_by_temporal_permission_by_org' => 'By role temporal permission',
+    'access_true_by_role' => 'Access granted by role',
+    'access_false_by_role' => 'Access invalid by granted or permission state disabled by role',
+    'access_false_without_any_permission' => 'Without any permission',
+    'jerarquia_exist' => 'Hierarchy already exist',
+    'jerarquia_parent_not_exist' => 'Parent new hierarchy does not exist',
+    'cant_move_to_main_hierarchy' => 'Cant move to main hierarchy',
+    'parent_can_be_the_new_hierarchy' => 'The new hierarchy cant be the parent',
+    'new_ip_incorrect' => 'Incorrect new last number: cant end in 00, 88 or 99',
+    'new_ip_incorrect_format' => 'Incorrect format',
+    'the_numbers_are_over' => 'The numbers for new hierarchy are over',
+    'updated_files' => 'Update successfully :field resources'
+];

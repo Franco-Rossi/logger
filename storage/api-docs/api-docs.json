@@ -1,0 +1,240 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Logger",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "host": "http://localhost",
+  "basePath": "/",
+  "paths": {
+    "/api/documentation": {
+      "get": {
+        "summary": "Display Swagger API page.",
+        "description": "",
+        "deprecated": false,
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/docs/{jsonFile}": {
+      "get": {
+        "summary": "Dump api-docs content endpoint. Supports dumping a json, or yaml file.",
+        "description": "",
+        "deprecated": false,
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "jsonFile",
+            "type": "string",
+            "required": false,
+            "description": ""
+          }
+        ]
+      },
+      "post": {
+        "summary": "Dump api-docs content endpoint. Supports dumping a json, or yaml file.",
+        "description": "",
+        "deprecated": false,
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "jsonFile",
+            "type": "string",
+            "required": false,
+            "description": ""
+          }
+        ]
+      },
+      "put": {
+        "summary": "Dump api-docs content endpoint. Supports dumping a json, or yaml file.",
+        "description": "",
+        "deprecated": false,
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "jsonFile",
+            "type": "string",
+            "required": false,
+            "description": ""
+          }
+        ]
+      },
+      "patch": {
+        "summary": "Dump api-docs content endpoint. Supports dumping a json, or yaml file.",
+        "description": "",
+        "deprecated": false,
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "jsonFile",
+            "type": "string",
+            "required": false,
+            "description": ""
+          }
+        ]
+      },
+      "delete": {
+        "summary": "Dump api-docs content endpoint. Supports dumping a json, or yaml file.",
+        "description": "",
+        "deprecated": false,
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "jsonFile",
+            "type": "string",
+            "required": false,
+            "description": ""
+          }
+        ]
+      },
+      "options": {
+        "summary": "Dump api-docs content endpoint. Supports dumping a json, or yaml file.",
+        "description": "",
+        "deprecated": false,
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "jsonFile",
+            "type": "string",
+            "required": false,
+            "description": ""
+          }
+        ]
+      }
+    },
+    "/docs/asset/{asset}": {
+      "get": {
+        "summary": "",
+        "description": "",
+        "deprecated": false,
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "asset",
+            "type": "string",
+            "required": true,
+            "description": ""
+          }
+        ]
+      }
+    },
+    "/api/oauth2-callback": {
+      "get": {
+        "summary": "Display Oauth2 callback pages.",
+        "description": "",
+        "deprecated": false,
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/log": {
+      "post": {
+        "summary": "Creates a new log register with the information sent by the API",
+        "description": "",
+        "deprecated": false,
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "",
+            "schema": {
+              "type": "object",
+              "required": ["title", "from", "config.level"],
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "from": {
+                  "type": "string"
+                },
+                "extra": {
+                  "type": "string"
+                },
+                "config": {
+                  "type": "object",
+                  "properties": {
+                    "level": {
+                      "type": "string"
+                    },
+                    "db": {
+                      "type": "integer"
+                    },
+                    "file": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "get": {
+        "summary": "Show all the DB logs from a certain date",
+        "description": "",
+        "deprecated": false,
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "date",
+            "type": "string",
+            "required": false,
+            "description": ""
+          }
+        ]
+      }
+    }
+  }
+}

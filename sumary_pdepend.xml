@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metrics generated="2020-07-06T14:51:48" pdepend="@package_version@" ahh="1.85" andc="0.024390243902439" calls="66" ccn="43" ccn2="43" cloc="253" clsa="0" clsc="23" eloc="497" fanout="26" leafs="4" lloc="242" loc="904" maxDIT="3" ncloc="651" noc="23" nof="0" noi="0" nom="32" nop="10" roots="18">
+  <files>
+    <file name="C:\tmpphpcs\logger\app\Console\Kernel.php" loc="43" cloc="19" eloc="17" lloc="8" ncloc="24"/>
+    <file name="C:\tmpphpcs\logger\app\Exceptions\Handler.php" loc="76" cloc="24" eloc="40" lloc="24" ncloc="52"/>
+    <file name="C:\tmpphpcs\logger\app\Http\Controllers\Controller.php" loc="16" cloc="0" eloc="12" lloc="8" ncloc="16"/>
+    <file name="C:\tmpphpcs\logger\app\Http\Controllers\LogController.php" loc="32" cloc="12" eloc="15" lloc="7" ncloc="20"/>
+    <file name="C:\tmpphpcs\logger\app\Http\Kernel.php" loc="85" cloc="28" eloc="49" lloc="6" ncloc="57"/>
+    <file name="C:\tmpphpcs\logger\app\Http\Middleware\Authenticate.php" loc="22" cloc="6" eloc="12" lloc="5" ncloc="16"/>
+    <file name="C:\tmpphpcs\logger\app\Http\Middleware\CheckForMaintenanceMode.php" loc="18" cloc="6" eloc="8" lloc="3" ncloc="12"/>
+    <file name="C:\tmpphpcs\logger\app\Http\Middleware\Cors.php" loc="23" cloc="7" eloc="12" lloc="4" ncloc="16"/>
+    <file name="C:\tmpphpcs\logger\app\Http\Middleware\EncryptCookies.php" loc="18" cloc="6" eloc="8" lloc="3" ncloc="12"/>
+    <file name="C:\tmpphpcs\logger\app\Http\Middleware\RedirectIfAuthenticated.php" loc="27" cloc="8" eloc="14" lloc="7" ncloc="19"/>
+    <file name="C:\tmpphpcs\logger\app\Http\Middleware\TrimStrings.php" loc="19" cloc="5" eloc="10" lloc="3" ncloc="14"/>
+    <file name="C:\tmpphpcs\logger\app\Http\Middleware\TrustProxies.php" loc="24" cloc="10" eloc="9" lloc="5" ncloc="14"/>
+    <file name="C:\tmpphpcs\logger\app\Http\Middleware\VerifyCsrfToken.php" loc="25" cloc="11" eloc="9" lloc="4" ncloc="14"/>
+    <file name="C:\tmpphpcs\logger\app\Http\Requests\LogShowRequest.php" loc="90" cloc="12" eloc="62" lloc="41" ncloc="78"/>
+    <file name="C:\tmpphpcs\logger\app\Http\Requests\LogStoreRequest.php" loc="92" cloc="12" eloc="66" lloc="34" ncloc="80"/>
+    <file name="C:\tmpphpcs\logger\app\Models\Log.php" loc="16" cloc="0" eloc="11" lloc="5" ncloc="16"/>
+    <file name="C:\tmpphpcs\logger\app\Models\User.php" loc="40" cloc="15" eloc="18" lloc="8" ncloc="25"/>
+    <file name="C:\tmpphpcs\logger\app\Providers\AppServiceProvider.php" loc="29" cloc="11" eloc="13" lloc="5" ncloc="18"/>
+    <file name="C:\tmpphpcs\logger\app\Providers\AuthServiceProvider.php" loc="31" cloc="12" eloc="13" lloc="6" ncloc="19"/>
+    <file name="C:\tmpphpcs\logger\app\Providers\BroadcastServiceProvider.php" loc="22" cloc="5" eloc="12" lloc="6" ncloc="17"/>
+    <file name="C:\tmpphpcs\logger\app\Providers\EventServiceProvider.php" loc="35" cloc="11" eloc="18" lloc="8" ncloc="24"/>
+    <file name="C:\tmpphpcs\logger\app\Providers\RouteServiceProvider.php" loc="74" cloc="33" eloc="30" lloc="13" ncloc="41"/>
+    <file name="C:\tmpphpcs\logger\app\Repository\RepositoryLog.php" loc="47" cloc="0" eloc="39" lloc="29" ncloc="47"/>
+  </files>
+  <package name="App\Console" noc="1" noi="0" nom="2" nof="0" cr="0.15" rcr="0.2775">
+    <class name="Kernel" fqname="App\Console\Kernel" start="8" end="42" loc="35" cloc="19" eloc="6" lloc="2" ncloc="16" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.2775" ca="0" cbo="1" ce="1" impl="0" cis="0" csz="3" npm="0" vars="1" varsi="1" varsnp="0" wmc="2" wmci="2" wmcnp="0">
+      <file name="C:\tmpphpcs\logger\app\Console\Kernel.php"/>
+      <method name="schedule" start="25" end="29" ccn="1" ccn2="1" loc="5" cloc="2" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="commands" start="36" end="41" ccn="1" ccn2="1" loc="6" cloc="0" eloc="4" lloc="2" ncloc="6" npath="1" hnt="11" hnd="13" hv="40.704836899552" hd="4.8" hl="0.20833333333333" he="195.38321711785" ht="10.854623173214" hb="0.011223722387817" hi="8.4801743540733" mi="75.46141948748"/>
+    </class>
+  </package>
+  <package name="App\Exceptions" noc="1" noi="0" nom="3" nof="0" cr="0.15" rcr="0.2775">
+    <class name="Handler" fqname="App\Exceptions\Handler" start="12" end="75" loc="64" cloc="24" eloc="20" lloc="12" ncloc="40" dit="2" noam="3" nocc="0" noom="0" nom="3" cr="0.15" rcr="0.2775" ca="0" cbo="6" ce="6" impl="0" cis="2" csz="5" npm="2" vars="2" varsi="2" varsnp="0" wmc="5" wmci="5" wmcnp="4">
+      <file name="C:\tmpphpcs\logger\app\Exceptions\Handler.php"/>
+      <method name="report" start="39" end="42" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="render" start="51" end="62" ccn="3" ccn2="3" loc="12" cloc="0" eloc="9" lloc="5" ncloc="12" npath="4" hnt="21" hnd="41" hv="112.50859209698" hd="10.607142857143" hl="0.094276094276094" he="1193.3947090287" ht="66.299706057149" hb="0.037503184862344" hi="10.606870635405" mi="64.418250271316"/>
+      <method name="failResponse" start="64" end="74" ccn="1" ccn2="1" loc="11" cloc="0" eloc="8" lloc="6" ncloc="11" npath="1" hnt="17" hnd="28" hv="81.725033674979" hd="4" hl="0.25" he="326.90013469992" ht="18.16111859444" hb="0.015818142306058" hi="20.431258418745" mi="66.775188964059"/>
+    </class>
+  </package>
+  <package name="App\Http\Controllers" noc="2" noi="0" nom="2" nof="0" cr="0.15" rcr="0.2775">
+    <class name="Controller" fqname="App\Http\Controllers\Controller" start="10" end="15" loc="6" cloc="0" eloc="0" lloc="0" ncloc="6" dit="2" noam="0" nocc="1" noom="0" nom="0" cr="0.2775" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\tmpphpcs\logger\app\Http\Controllers\Controller.php"/>
+    </class>
+    <class name="LogController" fqname="App\Http\Controllers\LogController" start="8" end="31" loc="24" cloc="12" eloc="6" lloc="2" ncloc="12" dit="3" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.385875" ca="0" cbo="4" ce="4" impl="0" cis="2" csz="2" npm="2" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\tmpphpcs\logger\app\Http\Controllers\LogController.php"/>
+      <method name="store" start="16" end="19" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="8" hv="21" hd="7.5" hl="0.13333333333333" he="157.5" ht="8.75" hb="0.0097214814250369" hi="2.8" mi="80.199394296734"/>
+      <method name="show" start="27" end="30" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="8" hv="21" hd="7.5" hl="0.13333333333333" he="157.5" ht="8.75" hb="0.0097214814250369" hi="2.8" mi="80.199394296734"/>
+    </class>
+  </package>
+  <package name="App\Http" noc="1" noi="0" nom="0" nof="0" cr="0.15" rcr="0.1925">
+    <class name="Kernel" fqname="App\Http\Kernel" start="7" end="84" loc="78" cloc="28" eloc="0" lloc="0" ncloc="50" dit="2" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="4" npm="0" vars="4" varsi="4" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\tmpphpcs\logger\app\Http\Kernel.php"/>
+    </class>
+  </package>
+  <package name="App\Http\Middleware" noc="8" noi="0" nom="3" nof="0" cr="0.15" rcr="0.66">
+    <class name="Authenticate" fqname="App\Http\Middleware\Authenticate" start="7" end="21" loc="15" cloc="6" eloc="5" lloc="2" ncloc="9" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="1" npm="0" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="0">
+      <file name="C:\tmpphpcs\logger\app\Http\Middleware\Authenticate.php"/>
+      <method name="redirectTo" start="15" end="20" ccn="2" ccn2="2" loc="6" cloc="0" eloc="5" lloc="2" ncloc="6" npath="2" hnt="10" hnd="12" hv="35.849625007212" hd="10.5" hl="0.095238095238095" he="376.42106257572" ht="20.912281254207" hb="0.017377795792053" hi="3.4142500006868" mi="73.599165884488"/>
+    </class>
+    <class name="CheckForMaintenanceMode" fqname="App\Http\Middleware\CheckForMaintenanceMode" start="7" end="17" loc="11" cloc="6" eloc="0" lloc="0" ncloc="5" dit="2" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="1" npm="0" vars="1" varsi="1" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\tmpphpcs\logger\app\Http\Middleware\CheckForMaintenanceMode.php"/>
+    </class>
+    <class name="Cors" fqname="App\Http\Middleware\Cors" start="7" end="22" loc="16" cloc="7" eloc="5" lloc="1" ncloc="9" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.15" ca="0" cbo="1" ce="1" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\tmpphpcs\logger\app\Http\Middleware\Cors.php"/>
+      <method name="handle" start="16" end="21" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="12" hnd="15" hv="46.882687147302" hd="4.5" hl="0.22222222222222" he="210.97209216286" ht="11.720671786826" hb="0.011813051167298" hi="10.418374921623" mi="72.917739069765"/>
+    </class>
+    <class name="EncryptCookies" fqname="App\Http\Middleware\EncryptCookies" start="7" end="17" loc="11" cloc="6" eloc="0" lloc="0" ncloc="5" dit="2" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="1" npm="0" vars="1" varsi="1" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\tmpphpcs\logger\app\Http\Middleware\EncryptCookies.php"/>
+    </class>
+    <class name="RedirectIfAuthenticated" fqname="App\Http\Middleware\RedirectIfAuthenticated" start="8" end="26" loc="19" cloc="8" eloc="6" lloc="3" ncloc="11" dit="0" noam="0" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.15" ca="0" cbo="2" ce="2" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\tmpphpcs\logger\app\Http\Middleware\RedirectIfAuthenticated.php"/>
+      <method name="handle" start="18" end="25" ccn="2" ccn2="2" loc="8" cloc="0" eloc="6" lloc="3" ncloc="8" npath="2" hnt="12" hnd="18" hv="50.039100017308" hd="6" hl="0.16666666666667" he="300.23460010385" ht="16.679700005769" hb="0.014945802496243" hi="8.3398500028846" mi="70.857843367026"/>
+    </class>
+    <class name="TrimStrings" fqname="App\Http\Middleware\TrimStrings" start="7" end="18" loc="12" cloc="5" eloc="0" lloc="0" ncloc="7" dit="2" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="1" npm="0" vars="1" varsi="1" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\tmpphpcs\logger\app\Http\Middleware\TrimStrings.php"/>
+    </class>
+    <class name="TrustProxies" fqname="App\Http\Middleware\TrustProxies" start="8" end="23" loc="16" cloc="10" eloc="0" lloc="0" ncloc="6" dit="2" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="2" npm="0" vars="2" varsi="2" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\tmpphpcs\logger\app\Http\Middleware\TrustProxies.php"/>
+    </class>
+    <class name="VerifyCsrfToken" fqname="App\Http\Middleware\VerifyCsrfToken" start="7" end="24" loc="18" cloc="11" eloc="0" lloc="0" ncloc="7" dit="2" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="2" npm="0" vars="2" varsi="2" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\tmpphpcs\logger\app\Http\Middleware\VerifyCsrfToken.php"/>
+    </class>
+  </package>
+  <package name="App\Http\Requests" noc="2" noi="0" nom="10" nof="0" cr="0.15" rcr="0.235">
+    <class name="LogShowRequest" fqname="App\Http\Requests\LogShowRequest" start="13" end="89" loc="77" cloc="12" eloc="45" lloc="28" ncloc="65" dit="2" noam="4" nocc="0" noom="0" nom="4" cr="0.15" rcr="0.21375" ca="1" cbo="4" ce="4" impl="0" cis="4" csz="4" npm="4" vars="0" varsi="0" varsnp="0" wmc="7" wmci="7" wmcnp="7">
+      <file name="C:\tmpphpcs\logger\app\Http\Requests\LogShowRequest.php"/>
+      <method name="__construct" start="17" end="21" ccn="1" ccn2="1" loc="5" cloc="0" eloc="4" lloc="2" ncloc="5" npath="1" hnt="8" hnd="10" hv="26.575424759099" hd="3" hl="0.33333333333333" he="79.726274277297" ht="4.4292374598498" hb="0.0061746601349011" hi="8.8584749196996" mi="76.757952883514"/>
+      <method name="authorize" start="28" end="31" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="rules" start="38" end="43" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="9" hnd="9" hv="28.529325012981" hd="12.25" hl="0.081632653061224" he="349.48423140901" ht="19.415790633834" hb="0.016538538763157" hi="2.3289244908556" mi="74.428220343202"/>
+      <method name="show" start="45" end="88" ccn="4" ccn2="4" loc="44" cloc="2" eloc="33" lloc="24" ncloc="42" npath="8" hnt="67" hnd="171" hv="496.99611849736" hd="9.6" hl="0.10416666666667" he="4771.1627375746" ht="265.06459653192" hb="0.09447021388043" hi="51.770429010141" mi="47.457280690055"/>
+    </class>
+    <class name="LogStoreRequest" fqname="App\Http\Requests\LogStoreRequest" start="13" end="91" loc="79" cloc="12" eloc="47" lloc="19" ncloc="67" dit="2" noam="6" nocc="0" noom="0" nom="6" cr="0.15" rcr="0.21375" ca="1" cbo="3" ce="3" impl="0" cis="6" csz="6" npm="6" vars="0" varsi="0" varsnp="0" wmc="8" wmci="8" wmcnp="8">
+      <file name="C:\tmpphpcs\logger\app\Http\Requests\LogStoreRequest.php"/>
+      <method name="__construct" start="17" end="21" ccn="1" ccn2="1" loc="5" cloc="0" eloc="4" lloc="2" ncloc="5" npath="1" hnt="8" hnd="10" hv="26.575424759099" hd="3" hl="0.33333333333333" he="79.726274277297" ht="4.4292374598498" hb="0.0061746601349011" hi="8.8584749196996" mi="76.757952883514"/>
+      <method name="authorize" start="28" end="31" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="rules" start="38" end="48" ccn="1" ccn2="1" loc="11" cloc="0" eloc="10" lloc="1" ncloc="11" npath="1" hnt="18" hnd="29" hv="87.443657912296" hd="4.9583333333333" hl="0.20168067226891" he="433.57480381514" ht="24.087489100841" hb="0.019095077973143" hi="17.635695713404" mi="64.455525834072"/>
+      <method name="save" start="50" end="65" ccn="3" ccn2="3" loc="16" cloc="0" eloc="12" lloc="8" ncloc="16" npath="4" hnt="20" hnd="48" hv="111.69925001442" hd="5.6" hl="0.17857142857143" he="625.51580008077" ht="34.750877782265" hb="0.024380218940329" hi="19.946294645433" mi="61.714795506573"/>
+      <method name="saveFile" start="67" end="77" ccn="1" ccn2="1" loc="11" cloc="2" eloc="7" lloc="5" ncloc="9" npath="1" hnt="20" hnd="49" hv="112.2941968823" hd="4.5217391304348" hl="0.22115384615385" he="507.76506416346" ht="28.209170231303" hb="0.021215533457917" hi="24.834293541279" mi="67.073929954316"/>
+      <method name="saveDB" start="79" end="90" ccn="1" ccn2="1" loc="12" cloc="0" eloc="11" lloc="2" ncloc="12" npath="1" hnt="26" hnd="50" hv="146.74026093414" hd="5.2826086956522" hl="0.18930041152263" he="775.17137841297" ht="43.065076578498" hb="0.02812832671962" hi="27.777991781772" mi="61.978387897608"/>
+    </class>
+  </package>
+  <package name="App\Models" noc="1" noi="0" nom="1" nof="0" cr="0.15" rcr="0.2775">
+    <class name="Log" fqname="App\Models\Log" start="7" end="15" loc="9" cloc="0" eloc="3" lloc="1" ncloc="9" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.2775" ca="1" cbo="0" ce="0" impl="0" cis="1" csz="2" npm="1" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\tmpphpcs\logger\app\Models\Log.php"/>
+      <method name="getTable" start="11" end="14" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="9" hnd="9" hv="28.529325012981" hd="6" hl="0.16666666666667" he="171.17595007788" ht="9.5097750043269" hb="0.010276389970974" hi="4.7548875021635" mi="79.267620989406"/>
+    </class>
+  </package>
+  <package name="App" noc="1" noi="0" nom="0" nof="0" cr="0.15" rcr="0.2775">
+    <class name="User" fqname="App\User" start="9" end="39" loc="31" cloc="15" eloc="0" lloc="0" ncloc="16" dit="2" noam="0" nocc="0" noom="0" nom="0" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="0" csz="3" npm="0" vars="3" varsi="3" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="C:\tmpphpcs\logger\app\Models\User.php"/>
+    </class>
+  </package>
+  <package name="App\Providers" noc="5" noi="0" nom="9" nof="0" cr="0.15" rcr="0.405">
+    <class name="AppServiceProvider" fqname="App\Providers\AppServiceProvider" start="7" end="28" loc="22" cloc="11" eloc="5" lloc="1" ncloc="11" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.21375" ca="0" cbo="1" ce="1" impl="0" cis="2" csz="2" npm="2" vars="0" varsi="0" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="C:\tmpphpcs\logger\app\Providers\AppServiceProvider.php"/>
+      <method name="register" start="14" end="17" ccn="1" ccn2="1" loc="4" cloc="1" eloc="2" lloc="0" ncloc="3" npath="1" hnt="2" hnd="2" hv="2" hd="2" hl="0.5" he="4" ht="0.22222222222222" hb="0.00083994736659658" hi="1" mi="91.191023588314"/>
+      <method name="boot" start="24" end="27" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="9" hnd="11" hv="31.134884567736" hd="4.375" hl="0.22857142857143" he="136.21511998384" ht="7.5675066657691" hb="0.0088246120816467" hi="7.1165450440539" mi="79.00185423579"/>
+    </class>
+    <class name="AuthServiceProvider" fqname="App\Providers\AuthServiceProvider" start="8" end="30" loc="23" cloc="12" eloc="3" lloc="1" ncloc="11" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="1" csz="2" npm="1" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\tmpphpcs\logger\app\Providers\AuthServiceProvider.php"/>
+      <method name="boot" start="24" end="29" ccn="1" ccn2="1" loc="6" cloc="1" eloc="3" lloc="1" ncloc="5" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+    </class>
+    <class name="BroadcastServiceProvider" fqname="App\Providers\BroadcastServiceProvider" start="8" end="21" loc="14" cloc="5" eloc="4" lloc="2" ncloc="9" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.21375" ca="0" cbo="1" ce="1" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\tmpphpcs\logger\app\Providers\BroadcastServiceProvider.php"/>
+      <method name="boot" start="15" end="20" ccn="1" ccn2="1" loc="6" cloc="0" eloc="4" lloc="2" ncloc="6" npath="1" hnt="8" hnd="10" hv="26.575424759099" hd="5.8333333333333" hl="0.17142857142857" he="155.02331109474" ht="8.6124061719302" hb="0.0096192988542301" hi="4.5557871015598" mi="76.757952883514"/>
+    </class>
+    <class name="EventServiceProvider" fqname="App\Providers\EventServiceProvider" start="10" end="34" loc="25" cloc="11" eloc="3" lloc="1" ncloc="14" dit="2" noam="1" nocc="0" noom="0" nom="1" cr="0.15" rcr="0.2775" ca="0" cbo="0" ce="0" impl="0" cis="1" csz="2" npm="1" vars="1" varsi="1" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="C:\tmpphpcs\logger\app\Providers\EventServiceProvider.php"/>
+      <method name="boot" start="28" end="33" ccn="1" ccn2="1" loc="6" cloc="1" eloc="3" lloc="1" ncloc="5" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="12.5" hl="0.08" he="193.87218755409" ht="10.770677086338" hb="0.011165780490257" hi="1.2407820003462" mi="81.120955834208"/>
+    </class>
+    <class name="RouteServiceProvider" fqname="App\Providers\RouteServiceProvider" start="8" end="73" loc="66" cloc="33" eloc="18" lloc="5" ncloc="33" dit="2" noam="4" nocc="0" noom="0" nom="4" cr="0.15" rcr="0.2775" ca="0" cbo="1" ce="1" impl="0" cis="2" csz="5" npm="2" vars="1" varsi="1" varsnp="0" wmc="4" wmci="4" wmcnp="2">
+      <file name="C:\tmpphpcs\logger\app\Providers\RouteServiceProvider.php"/>
+      <method name="boot" start="24" end="29" ccn="1" ccn2="1" loc="6" cloc="1" eloc="3" lloc="1" ncloc="5" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="12.5" hl="0.08" he="193.87218755409" ht="10.770677086338" hb="0.011165780490257" hi="1.2407820003462" mi="81.120955834208"/>
+      <method name="map" start="36" end="43" ccn="1" ccn2="1" loc="8" cloc="1" eloc="4" lloc="2" ncloc="7" npath="1" hnt="6" hnd="8" hv="18" hd="6" hl="0.16666666666667" he="108" ht="6" hb="0.0075595262993692" hi="3" mi="77.942747490525"/>
+      <method name="mapWebRoutes" start="52" end="57" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="1" ncloc="6" npath="1" hnt="9" hnd="12" hv="32.26466250649" hd="2.8" hl="0.35714285714286" he="90.341055018173" ht="5.0189475010096" hb="0.0067112309460288" hi="11.523093752318" mi="74.054063359003"/>
+      <method name="mapApiRoutes" start="66" end="72" ccn="1" ccn2="1" loc="7" cloc="0" eloc="6" lloc="1" ncloc="7" npath="1" hnt="12" hnd="16" hv="48" hd="3.2142857142857" hl="0.31111111111111" he="154.28571428571" ht="8.5714285714286" hb="0.0095887623606977" hi="14.933333333333" mi="71.118860433792"/>
+    </class>
+  </package>
+  <package name="App\Repository" noc="1" noi="0" nom="2" nof="0" cr="0.15" rcr="0.2775">
+    <class name="RepositoryLog" fqname="App\Repository\RepositoryLog" start="8" end="46" loc="39" cloc="0" eloc="30" lloc="24" ncloc="39" dit="2" noam="2" nocc="0" noom="0" nom="2" cr="0.15" rcr="0.2775" ca="2" cbo="2" ce="2" impl="0" cis="2" csz="2" npm="2" vars="0" varsi="0" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="C:\tmpphpcs\logger\app\Repository\RepositoryLog.php"/>
+      <method name="create" start="10" end="28" ccn="2" ccn2="2" loc="19" cloc="0" eloc="16" lloc="13" ncloc="19" npath="2" hnt="30" hnd="62" hv="178.62588931161" hd="6.4814814814815" hl="0.15428571428571" he="1157.7603936863" ht="64.320021871463" hb="0.036752865418989" hi="27.559422922362" mi="57.696219825902"/>
+      <method name="show" start="30" end="45" ccn="2" ccn2="2" loc="16" cloc="0" eloc="14" lloc="11" ncloc="16" npath="2" hnt="32" hnd="60" hv="189.02049905947" hd="9.75" hl="0.1025641025641" he="1842.9498658299" ht="102.38610365721" hb="0.050105772175859" hi="19.386717852254" mi="58.789253109485"/>
+    </class>
+  </package>
+</metrics>

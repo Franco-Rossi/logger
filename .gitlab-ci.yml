@@ -1,0 +1,143 @@
+stages:
+  - build
+  - test
+  - deploy
+
+image: php:7.4-fpm 
+
+#cache:
+#  key: ${CI_COMMIT_REF_SLUG}
+#  paths:
+#    - vendor/
+
+before_script:
+  - echo "Preparamos la imagen"
+  - echo $COMPOSER_AUTH
+  - echo "Instalando paquetes..."
+  - apt-get update && apt-get install -y libpng-dev libonig-dev libxml2-dev curl git zip unzip
+  - apt-get clean && rm -rf /var/lib/apt/lists/*
+  - docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
+  - pecl install xdebug-2.9.6 && docker-php-ext-enable xdebug
+  - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+  - git config --global http.sslverify false
+  - echo $CI_PIPELINE_ID
+
+buildDesaLaravel:
+  stage: build
+  script:
+    - echo "Building for dev..."
+    - echo $COMPOSER_AUTH
+    - echo $CI_JOB_STAGE
+    - echo "${CI_PROJECT_NAME}:${CI_COMMIT_REF_NAME}-0.1.${CI_JOB_ID}"
+    - php --ini
+    #- rm -f composer.lock
+    - composer install
+    - ls -lrtha vendor/bin
+    - mkdir dist_dev
+    - tar -czf ./dist_dev/dist_dev.tar.gz --exclude=$PWD/dist_dev --exclude=./dist_dev/dist_dev.tar.gz . 
+    - ls -lrtha ./dist_dev/
+    - cd dist_dev && pwd && tar -xzf dist_dev.tar.gz
+  artifacts:
+  #  name: "${CI_PROJECT_NAME}_${CI_COMMIT_REF_NAME}_artifacts"
+    expire_in: 30 minutes
+    paths:
+      - "dist_dev"
+  tags:
+  - Desarrollo-IT-2
+
+codeStyle:
+  stage: test
+  cache: {}
+  script:
+    - echo "PSR12 Check"
+    - ls -lrta ./dist_dev/
+    - pwd
+    - cd dist_dev
+    - pwd
+    - composer run-script phpcs
+  dependencies:
+    - buildDesaLaravel
+  tags:
+  - Desarrollo-IT-2
+
+messDetector:
+  stage: test
+  cache: {}
+  script:
+    - echo "PHPMD Check"
+    - pwd
+    - cd dist_dev
+    - pwd
+    - ls -lrth
+    - composer run-script phpmd
+  dependencies:
+    - buildDesaLaravel
+  tags:
+  - Desarrollo-IT-2
+
+phpDepend:
+  stage: test
+  cache: {}
+  script:
+    - echo "PDEPEND Check"
+    - pwd
+    - cd dist_dev
+    - pwd
+    - composer run-script pdepend
+  dependencies:
+    - buildDesaLaravel
+  tags:
+    - Desarrollo-IT-2
+
+unitTest:
+  stage: test
+  script:
+    - echo "Unit Test"
+    - ls -lrta ./dist_dev/
+    - cd dist_dev
+    - pwd
+    - composer run-script test
+    - pwd
+  dependencies:
+    - buildDesaLaravel
+  artifacts:
+    paths:
+      - "dist_dev/coverage/"
+  tags:
+  - Desarrollo-IT-2
+
+pages:
+  stage: deploy
+  dependencies:
+    - unitTest
+  script:
+    - pwd
+    - ls -lrt
+    - rm -f public/*
+    - mv dist_dev/coverage/* public/
+  artifacts:
+    paths:
+      - public
+    expire_in: 30 days
+  #only:
+  #  - master
+  tags:
+  - Desarrollo-IT-2
+
+deploy1:
+  stage: deploy
+  dependencies:
+    - unitTest
+  script:
+    - echo "Do your deploy here"
+    - echo $CI_PIPELINE_ID
+    - echo $CI_JOB_STAGE
+    - echo $CI_ENVIRONMENT_NAME
+    - echo "Building for prod..."
+    - echo composer install --optimize-autoloader --no-dev --no-cache
+  environment:
+    name: staging
+  only:
+  - master
+  tags:
+  - Desarrollo-IT-2
